@@ -140,12 +140,12 @@ void main() {
 			}
 		}
 		system("cls");
+		ostringstream ss;
 		cout << "I made a donut cus im hungry\nu can use 'wasd' to make the donut dance\n";
 		unsigned int k = 0;
-		std::ofstream outFile("screenshot.txt");
-
 		for (unsigned int i = 0; i < scr_y; i++) {
 			ostringstream line;
+
 			for (unsigned int j = 0; j < scr_x; j++) {
 				if (ceil(buffer[k] / 2) > 1) {
 					line << ' ';
@@ -155,20 +155,8 @@ void main() {
 				}
 				k++;
 			}
-
-			//_debug_break();
-
-			string line2 = "asdfasdfasd  jghfjghfjghfv\nghhfjghfgjhf";
-			if (screenshot) {
-				//std::to_string()
-				//outFile << line2 << "\n";
-			}
 			cout << line.str() << "\n";
 		}
-		if (screenshot) {
-			screenshot = false;
-		}
-		outFile.close();
 		cout << "A: " << A * 360 / (2 * pi) << "\nB: " << B * 360 / (2 * pi) << "\nC: " << C * 360 / (2 * pi);
 		A = A + 0.01;
 		B = B + 0.05;
