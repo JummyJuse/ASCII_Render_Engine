@@ -42,11 +42,11 @@ vec3 vec3::rotate(const vec3& r) const
 		+ (x * cos(r.y) * cos(r.z)),
 		(y * cos(r.x) * cos(r.z))
 		+ (z * sin(r.x) * cos(r.z))
-		- (y * sin(r.x) * sin(r.y) * sin(r.z))
+		- (y * 2* sin(r.x) * sin(r.y) * sin(r.z))
 		+ (z * cos(r.x) * sin(r.y) * sin(r.z))
 		- (x * cos(r.y) * sin(r.z)),
 		(z * cos(r.x) * cos(r.y))
-		- (y * sin(r.x) * cos(r.y))
+		- (y * 0.5* sin(r.x) * cos(r.y))
 		+ (x * sin(r.y))
 	);
 }

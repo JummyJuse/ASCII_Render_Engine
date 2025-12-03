@@ -130,12 +130,19 @@
     <ClCompile Include="control.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="camera.cpp" />
+    <ClCompile Include="mesh.cpp" />
     <ClCompile Include="vec3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="camera.h" />
     <ClInclude Include="control.h" />
+    <ClInclude Include="mesh.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="vec3.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="obj1.bin" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -3,7 +3,5 @@
 
 #include "vec3.h"
 #include "camera.h"
-char keyPressed;
-
+bool ifchangedo(char actual, char expected, float& var, float amount);
 #endif
-

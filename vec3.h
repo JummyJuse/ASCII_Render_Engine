@@ -13,8 +13,11 @@ struct vec3 {
 	float dot(const vec3& v) const;
 	vec3 cross(const vec3& v) const;
 
+	
 	float length() const;
 	vec3 normalize() const;
 	vec3 rotate(const vec3& r) const;
 };
+
+
 #endif
